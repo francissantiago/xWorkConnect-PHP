@@ -1,0 +1,16 @@
+{
+    "name": "dev_francissantiago/xwork-connect",
+    "description": "Uma biblioteca para gerenciar conexões com banco de dados XWF e Firebird para o Gestão Profissional.",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "xWorkPHP\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    }
+}
