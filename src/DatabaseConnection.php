@@ -35,10 +35,10 @@ class DatabaseConnection
             $user = $this->config['xwf']['user'];
             $password = $this->config['xwf']['password'];
 
-            $this->pdoXWF = new PDO($dsn, $user, $password);
-            $this->pdoXWF->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->pdoXWF = new \PDO($dsn, $user, $password);
+            $this->pdoXWF->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
             $this->handleSuccess('xwf');
-        } catch (PDOException $e) {
+        } catch (\PDOException $e) {
             $this->handleError('xwf', $e->getMessage());
         }
     }
@@ -50,10 +50,10 @@ class DatabaseConnection
             $user = $this->config['firebird']['user'];
             $password = $this->config['firebird']['password'];
 
-            $this->pdoFirebird = new PDO($dsn, $user, $password);
-            $this->pdoFirebird->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->pdoFirebird = new \PDO($dsn, $user, $password);
+            $this->pdoFirebird->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
             $this->handleSuccess('firebird');
-        } catch (PDOException $e) {
+        } catch (\PDOException $e) {
             $this->handleError('firebird', $e->getMessage());
         }
     }

@@ -9,8 +9,8 @@ class DatabaseConnectionTest extends TestCase
         $configFile = 'config/config.ini';
         $dbConnection = new DatabaseConnection($configFile);
 
-        $this->assertInstanceOf(PDO::class, $dbConnection->getXWFConnection());
-        $this->assertInstanceOf(PDO::class, $dbConnection->getFirebirdConnection());
+        $this->assertInstanceOf(\PDO::class, $dbConnection->getXWFConnection());
+        $this->assertInstanceOf(\PDO::class, $dbConnection->getFirebirdConnection());
     }
 }
 ?>
