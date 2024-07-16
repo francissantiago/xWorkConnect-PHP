@@ -2,6 +2,7 @@
     "name": "dev_francissantiago/xwork-connect",
     "description": "Uma biblioteca para gerenciar conexões com banco de dados XWF e Firebird para o Gestão Profissional.",
     "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "xWorkPHP\\": "src/"
